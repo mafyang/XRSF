@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"/>
+		<link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" type="text/css" href="css/lightbox.css"/>
+		<link rel="stylesheet" href="index.css" />
+		<script src="js/jquery-1.8.3.min.js"></script>
+		<script src="js/jquery.fullPage.js"></script>
+		<script src="js/wow.js"></script>
+		<script src="js/lightbox.js"></script>
+		<script>
+			$(function(){
+				
+				$(".main").fullpage({
+					sectionsColor:['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90','#ff6644','yellow','green','red'],
+//					continuousVertical:true,
+					afterLoad:function(anchorLink,index){
+						if(index==2){
+							$(".s2 h3").css("left","0")
+							
+						}//if ed
+						if(index==3){
+							$(".s3 h3").css("left","0")
+							
+						}//if ed
+						if(index==4){
+							$(".s4 h3").css("left","0")
+							
+						}//if ed
+						if(index==5){
+							$(".s5 h3").css("left","0")
+							
+						}//if ed
+						if(index==7){
+							$(".s7 h3").css("left","0")
+							
+						}//if ed
+				         if(index==7){
+							$(".s7 .box").css("right","-30%")
+							
+						}//if ed
+						 if(index==2){
+							$(".s2 .tu").css("right","20%")
+							
+						}//if ed
+						if(index==3){
+							$(".s3 .tu2").css("left","20%")
+							
+						}
+						if(index==4){
+							$(".s4 .tu3").css("right","20%")
+							
+						}
+						if(index==8){
+							$(".s8 .box2").css("left","9%")
+							$(".zhong").hide();
+							$(".shang").show();
+							
+						}
+						if(index<8){
+							$(".zhong").show();
+							$(".shang").hide();
+							var ind=index+1;
+							$(".zhong").attr("href","#page"+ind)
+						}
+						if(index==6){
+							$(".s6 .tu5").css("right","18%")
+							
+						}//if ed
+						
+					
+					},//after ed
+					onLeave:function(index,direction){
+						if(index==2){$(".s2 h3").css("left","-200%")}
+						if(index==3){$(".s3 h3").css("left","-200%")}
+						if(index==4){$(".s4 h3").css("left","-200%")}
+						if(index==5){$(".s5 h3").css("left","-200%")}
+					    if(index==7){$(".s7 h3").css("left","-200%")}
+					    if(index==7){$(".s7 .box").css("right","-200%")}
+					    if(index==2){$(".s2 .tu").css("right","-200%")}
+					    if(index==3){$(".s3 .tu2").css("left","-200%")}
+					    if(index==4){$(".s4 .tu3").css("right","-200%")}
+					    if(index==8){$(".s8 .box2").css("left","-200%")}
+					    if(index==6){$(".s6 .tu5").css("right","-200%")}//if ed
+					},
+					'navigation':true,
+					menu:'#menu',
+					anchors: ['page1', 'page2', 'page3', 'page4','page5','page6','page7','page8'],
+
+				})
+
+
+			})
+		</script>
+	</head>
+	<body>
+		<div id="menu">
+		<div class="logo">
+			<img src="images/logo-1_03 (1).png" alt="" /></div>
+		<ul>
+			
+			<li data-menuanchor="page1"><a href="#page1">首页</a></li>
+			<li data-menuanchor="page2"><a href="#page2">世外桃源</a></li>
+			<li data-menuanchor="page3"><a href="#page3">源生原味</a></li>
+			<li data-menuanchor="page4"><a href="#page4">星星作伴</a></li>
+			<li data-menuanchor="page5"><a href="#page5">创想意境</a></li>
+			<li data-menuanchor="page6"><a href="#page6">闲云圣景</a></li>
+			<li data-menuanchor="page7"><a href="#page7">活动</a></li>
+			<li data-menuanchor="page8"><a href="#page8">联系我们</a></li>				
+			
+		</ul>
+	</div>
+	<div ><a href="#page2" class="zhong"><img src="images/gd_03 (1).png" alt="" /></a>
+		<a href="#page1" class="shang"><img src="images/gdd_03 (1).png" alt="" /></a>
+	</div>
+		<div class="main">
+			<div class="section s1">
+				
+				
+				<div class="xia wow shake"><img src="images/x1_03 (1).png" alt="" class=""/></div>
+				
+			</div>
+			<div class="section s2">
+				<h3><img src="images/01_03.png" alt="" /></h3>
+				<div class="tu clearfix">
+					<ul>
+						<li class="li1 fangda"><a href="images-1/li-1.jpg" data-lightbox="pic"><img src="images-1/li-1.jpg" alt="" /></a></li>
+						<li class="fangda"><a href="images-1/li-2.jpg" data-lightbox="pic"><img src="images-1/li-2.jpg" alt="" /></a></li>
+						<li class="li3 fangda"><a href="images-1/li-3.jpg" data-lightbox="pic"><img src="images-1/li-3.jpg" alt="" /></a></li>
+						<li class="fangda"><a href="images-1/li-4.jpg" data-lightbox="pic"><img src="images-1/li-4.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="section s3">
+				<h3><img src="images/02_03.png" alt="" /></h3>
+				<div class="tu2 clearfix">
+					<ul>
+						<li class="li1 fangda"><a href="images-1/li-5.jpg" data-lightbox="pic2"><img src="images-1/li-5.jpg" alt="" /></a></li>
+						<li class="li2 fangda"><a href="images-1/li-6.jpg" data-lightbox="pic2"><img src="images-1/li-6.jpg" alt="" /></a></li>
+						<li class="li fangda"><a href="images-1/li-7.jpg" data-lightbox="pic2"><img src="images-1/li-7.jpg" alt="" /></a></li>
+						<li class="li3 fangda"><a href="images-1/li-8.jpg" data-lightbox="pic2"><img src="images-1/li-8.jpg" alt="" /></a></li>
+						<li class="li5 fangda"><a href="images-1/li-9.jpg" data-lightbox="pic2"><img src="images-1/li-9.jpg" alt="" /></a></li>
+						<li class="fangda"><a href="images-1/li-10.jpg" data-lightbox="pic2"><img src="images-1/li-10.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="section s4">
+				<h3><img src="images/03_03.png" alt="" /></h3>
+				<div class="tu3 clearfix">
+					<ul>
+						<li class="li1 fangda"><a href="images-1/li-11.jpg" data-lightbox="pic3"><img src="images-1/li-11.jpg" alt="" /></a></li>
+						<li class="fangda"><a href="images-1/li-12.jpg" data-lightbox="pic3"><img src="images-1/li-12.jpg" alt="" /></a></li>
+						<li class="li3 fangda"><a href="images-1/li-13.jpg" data-lightbox="pic3"><img src="images-1/li-13.jpg" alt="" /></a></li>
+						<li class="fangda"><a href="images-1/li-14.jpg" data-lightbox="pic3"><img src="images-1/li-14.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="section s5">
+				<h3 class=""><img src="images/05_03.png" alt=""  /></h3>
+				<div class="tu4 clearfix">
+					<ul>
+						<li class="li1 fangda"><a href="images-1/li-15.jpg" data-lightbox="pic4"><img src="images-1/li-15.jpg" alt="" /></a></li>
+						<li class="fangda"><a href="images-1/li-16.jpg" data-lightbox="pic4"><img src="images-1/li-16.jpg" alt="" /></a></li>
+						
+					</ul>
+				</div>
+			</div>
+			<div class="section s6">
+				<h3 class=""><img src="images/06_03.png" alt=""  /></h3>
+				<div class="tu5 clearfix">
+					<ul>
+						<li class="li1 fangda"><a href="images-1/li-17.jpg" data-lightbox="pic5"><img src="images-1/li-17.jpg" alt="" /></a></li>
+						<li class="fangda"><a href="images-1/li-18.jpg" data-lightbox="pic5"><img src="images-1/li-18.jpg" alt="" /></a></li>
+						<li class="li3 fangda"><a href="images-1/li-19.jpg" data-lightbox="pic5"><img src="images-1/li-19.jpg" alt="" /></a></li>
+						<li class="fangda"><a href="images-1/li-20.jpg" data-lightbox="pic5"><img src="images-1/li-20.jpg" alt="" /></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="section s7">
+				<h3 class=""><img src="images/07_03.png" alt=""  /></h3>
+				<div class="box">
+				<p>活动时间：<br/>12月15日到2月15日</p>
+				</div>
+			</div>
+			<div class="section s8">
+				<h3 class=""><img src="images/08_03.png" alt=""  /></h3>
+				<div class="right">
+				<img src="images/l1 (1).png" alt="" />
+				<ul>
+					 <li  class="">联系人：张先生</li>
+                     <li class="">联系电话：010-61670298</li>
+                     <li  class="">手机：010-13581784389</li>
+                     <li  class="">地      址：北京市怀柔区喇叭沟门原始森林公园大门口</li>
+				</ul>
+				</div> 
+				<div class="box2">
+          <p class="p1">公司简介</p>
+          <p>北京叠翠谷旅游开发有限公司全资开发建设的闲云山房项目，位于北京市怀柔区喇叭沟门原始森林自然保护区内，总占地面积3000亩，是集生态养殖、种植、餐饮、住宿、观光、会议、健康养生为一体的综合性度假区。拥有自然景观十多处，特色别墅30栋，餐厅1栋，多功能厅1栋。此生态区是北京仅有的非雾霾环境区域，是大自然赐予我们的天然大氧吧.</p>
+				</div>
+			</div>
+		</div>
+<script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+      }
+    );
+    wow.init();
+    
+  </script>
+	</body>
+</html>
